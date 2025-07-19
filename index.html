@@ -6,23 +6,7 @@
     <meta name="facebook-domain-verification" content="r149l2iyhhjjpoi0o1g7ow3yxsaant" />
     <title>Ralph Publishers | From Expert to Published Authority</title>
     
-    <!-- Meta Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1110232216999898');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1110232216999898&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
+   
     
     <style>
         /* ===== BASE STYLES ===== */
@@ -357,41 +341,7 @@
                 <h2 class="booking-title">Book Your Strategy Call</h2>
                 <p class="booking-subtitle">30 minutes • Completely free • No obligation</p>
                 
-                <!-- Calendly Embed -->
-                <div id="calendly-widget" style="min-width:320px;height:630px;border-radius:16px;"></div>
-                <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-                <script>
-                  // Wait for Calendly to load before initializing
-                  function initCalendly() {
-                    if (typeof Calendly !== 'undefined') {
-                      Calendly.initInlineWidget({
-                        url: 'https://calendly.com/raphael12/discoverycall',
-                        parentElement: document.getElementById('calendly-widget'),
-                        prefill: {},
-                        utm: {}
-                      });
-                    } else {
-                      // If Calendly isn't loaded yet, wait and try again
-                      setTimeout(initCalendly, 100);
-                    }
-                  }
-                  
-                  // Start initialization when page loads
-                  window.addEventListener('load', initCalendly);
-                </script>
-                <!-- Facebook Pixel Event: Track Booking Completion -->
-                <script>
-                  window.addEventListener('message', function(e) {
-                    if (e.data.event && e.data.event === 'calendly.event_scheduled') {
-                      fbq('track', 'Lead', {
-                        content_name: 'Strategy Call Booking',
-                        content_category: 'Book Coaching',
-                        value: 25000,
-                        currency: 'ZAR'
-                      });
-                    }
-                  });
-                </script>
+     
                 
                 <p style="color: rgba(255,255,255,0.7); margin-top: 30px; font-size: 14px;">
                     Can't see the calendar? <a href="https://calendly.com/raphael12/discoverycall" style="color:#d4af37;" onclick="fbq('track', 'Lead');">Open it here</a>.
